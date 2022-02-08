@@ -93,6 +93,11 @@ body{
   background: #222327;
   border-radius: 50px;
   transition: 0.5s;
+  /* center icons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #222327;
 }
 
 .navigation span:nth-child(1){
@@ -106,6 +111,7 @@ body{
 .navigation.active span{
   width: 50px;
   height: 50px;
+  transition: 0.5s;
 }
 
 /* circles position */
@@ -116,3 +122,23 @@ body{
 .navigation.active span:nth-child(3){
   transform: translateY(0) translateX(60px);
 }
+
+.navigation span i{
+  /* here hide icons with font size */
+  transition: 0.5s;
+  font-size: 0em;
+}
+
+.navigation.active span i{
+  /* here appear icons with font size */
+  font-size: 1.25em;
+  color: #fff;
+}
+
+.navigation.active span:hover{
+  background: #6584ff;
+}
+
+/* .navigation.active span:hover i{
+  color: #222327;
+} */
